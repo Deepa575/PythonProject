@@ -1,0 +1,87 @@
+[
+    {
+        "0xF0": [
+            {
+                "0x11": [
+                    {
+                        "ErrorType": 1,
+                        "left_door_cumulative_count": 18038,
+                        "left_door_occurrence_count": 1091838994,
+                        "right_door_cumulative_count": 13377,
+                        "right_door_occurrence_count": 388199697
+                    },
+                    {
+                        "ErrorType": 2,
+                        "left_door_cumulative_count": 9078,
+                        "left_door_occurrence_count": 2517902407,
+                        "right_door_cumulative_count": 13330,
+                        "right_door_occurrence_count": 391201553
+                    }
+                ]
+            },
+            {
+                "0x03": [
+                    {
+                        "door_type": 2,
+                        "motor1_sys_cyc_count": 1036999,
+                        "motor2_sys_cyc_count": 49032135
+                    }
+                ]
+            },
+            {
+                "0x00": [
+                    {
+                        "status_value": 0,
+                        "lcp_firm_version": 1
+                    }
+                ]
+            },
+            {
+                "0x10": [
+                    {
+                        "status_value": 16,
+                        "mcp_firm_version": 1
+                    }
+                ]
+            },
+            {
+                "0x1E": [
+                    {
+                        "switch_mode_value": 3
+                    }
+                ]
+            },
+            {
+                "0x01": [
+                    {
+                        "system_cycle_count": 33555201,
+                        "active_door_id": 1,
+                        "original_door_id": 1
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "0xF1": [
+            {
+                "0x11": [
+                    {
+                        "ErrorType": 3,
+                        "left_door_cumulative_count": 5670,
+                        "left_door_occurrence_count": 20202498,
+                        "right_door_cumulative_count": 9233,
+                        "right_door_occurrence_count": 1193485633
+                    },
+                    {
+                        "ErrorType": 4,
+                        "left_door_cumulative_count": 21270,
+                        "left_door_occurrence_count": 1711539265,
+                        "right_door_cumulative_count": 5234,
+                        "right_door_occurrence_count": 324092225
+                    }
+                ]
+            }
+        ]
+    }
+]

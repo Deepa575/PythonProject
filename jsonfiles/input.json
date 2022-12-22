@@ -1,0 +1,77 @@
+{
+                "Metadata": {
+                    "ConfigVerNo": "cof123",
+                    "DoorType": {
+                        "Type": "String"
+                    },
+                    "FirmwareVersionRange": {
+                        "LowVersion": "String",
+                        "HighVersion": "String"
+                    },
+                    "endpoint_ciu_cloud" : {
+                        "AWS_HOSTNAME" : "ar72sxipi1awa.iot.us-east-2.amazonaws.com"
+                    },
+                    "Device_profile_id":"dev_123"
+                },
+                "DataCommandGroup": [
+                    {
+                        "ID": "0xF0",
+                        "Name": "Door Error",
+                        "PollTime": "1000, // in milliseconds",
+                        "TransmitTime": "10000, //Max time the CIU will wait. If no transmission till that time, then there will be a force transmission",
+                        "Active": "Y",
+                        "Priority": 1,
+                        "TransmitOnChange": "Y",
+                        "List": ["0x01", "0x02"],
+                        "Commands": [
+                            {"ID": "0x01", "Active": "Y", "Cmd": ["0x11", "0x01", "0x00", "$List"]},
+                            {"ID": "0x02", "Active": "Y", "Cmd": ["0x11", "0x11", "0x00", "$List"]},
+                            {"ID": "0x03", "Active": "Y", "Cmd": ["0x11", "0x11", "0x01", "$List"]},
+                            {"ID": "0x04", "Active": "Y", "Cmd": ["0x11", "0x02", "0x00", "$List"]},
+                            {"ID": "0x05", "Active": "Y", "Cmd": ["0x11", "0x12", "0x00", "$List"]},
+                            {"ID": "0x06", "Active": "Y", "Cmd": ["0x11", "0x12", "0x01", "$List"]},
+                            {"ID": "0x07", "Active": "Y", "Cmd": ["0x03", "0x00", "0x00", "0x00"]},
+                            {"ID": "0x08", "Active": "Y", "Cmd": ["0x00", "0x00", "0x00", "0x00"]},
+                            {"ID": "0x09", "Active": "Y", "Cmd": ["0x10", "0x00", "0x00", "0x00"]},
+                            {"ID": "0x10", "Active": "Y", "Cmd": ["0x10", "0x01", "0x00", "0x00"]},
+                            {"ID": "0x11", "Active": "Y", "Cmd": ["0x1E", "0x00", "0x00", "0x00"]},
+                            {"ID": "0x12", "Active": "Y", "Cmd": ["0x01", "0x68", "0x00", "0x00"]},
+                            {"ID": "0x13", "Active": "Y", "Cmd": ["0x01", "0x6A", "0x00", "0x00"]},
+                            {"ID": "0x14", "Active": "Y", "Cmd": ["0x03", "0x7C", "0x00", "0x00"]},
+                            {"ID": "0x15", "Active": "Y", "Cmd": ["0x03", "0x7D", "0x00", "0x00"]},
+                            {"ID": "0x16", "Active": "Y", "Cmd": ["0x03", "0x7E", "0x00", "0x00"]},
+                            {"ID": "0x17", "Active": "Y", "Cmd": ["0x03", "0x7F", "0x00", "0x00"]},
+                            {"ID": "0x18", "Active": "Y", "Cmd": ["0x03", "0x6C", "0x00", "0x00"]},
+                            {"ID": "0x19", "Active": "Y", "Cmd": ["0x03", "0x6D", "0x00", "0x00"]},
+                            {"ID": "0x20", "Active": "Y", "Cmd": ["0x03", "0x6E", "0x00", "0x00"]},
+                            {"ID": "0x21", "Active": "Y", "Cmd": ["0x03", "0x6F", "0x00", "0x00"]},
+                            {"ID": "0x22", "Active": "Y", "Cmd": ["0x01", "0x81", "0x00", "0x00"]},
+                            {"ID": "0x23", "Active": "Y", "Cmd": ["0x01", "0x83", "0x00", "0x00"]},
+                            {"ID": "0x24", "Active": "Y", "Cmd": ["0x01", "0x85", "0x00", "0x00"]},
+                            {"ID": "0x25", "Active": "Y", "Cmd": ["0x01", "0x87", "0x00", "0x00"]},
+                            {"ID": "0x26", "Active": "Y", "Cmd": ["0x01", "0x8B", "0x00", "0x00"]},
+                            {"ID": "0x27", "Active": "Y", "Cmd": ["0x01", "0x8D", "0x00", "0x00"]},
+                            {"ID": "0x28", "Active": "Y", "Cmd": ["0x01", "0x8F", "0x00", "0x00"]},
+                            {"ID": "0x29", "Active": "Y", "Cmd": ["0x01", "0x91", "0x00", "0x00"]}
+                        ]
+                    },
+                    {
+                        "ID": "0xF1",
+                        "Name": "Door Error",
+                        "PollTime": "1000, // in milliseconds",
+                        "TransmitTime": 10000,
+                        "Active": "Y",
+                        "Priority": 1,
+                        "TransmitOnChange": "Y",
+                        "List": ["0x03", "0x04"],
+                        "Commands": [
+                            {"ID": "0x01", "Active": "Y", "Cmd": ["0x11", "0x01", "0x00", "$List"]},
+                            {"ID": "0x02", "Active": "Y", "Cmd": ["0x11", "0x11", "0x00", "$List"]},
+                            {"ID": "0x03", "Active": "Y", "Cmd": ["0x11", "0x11", "0x01", "$List"]},
+                            {"ID": "0x04", "Active": "Y", "Cmd": ["0x11", "0x02", "0x00", "$List"]},
+                            {"ID": "0x05", "Active": "Y", "Cmd": ["0x11", "0x12", "0x00", "$List"]},
+                            {"ID": "0x06", "Active": "Y", "Cmd": ["0x11", "0x12", "0x01", "$List"]}
+                        ]
+                    }
+                ]
+            }
